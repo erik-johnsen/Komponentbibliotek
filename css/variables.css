@@ -1,3 +1,18 @@
 :root {
 	--font-size-base: 16px;
+
+	--color-primary: #4EACFF;
+	--color-inactive: #D9DEE3;
+	--color-active: #1E81D8;
+	--color-hover: #A5BEE3;
+	--color-normal: #A1CDF4;
+	--color-warning: #E3B505;
+	--color-error: #D74F4F;
+	--color-important: #FF1D1D;
+
+	--font-size-small: 0.938rem;
+	--font-size-medium: 1.875rem;
+
+	--font-opacity-half: 0.42;
+	
 }
