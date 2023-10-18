@@ -1,11 +1,1 @@
-@font-face {
-    font-family: 'Roboto';
-    font-variant: 500;
-    src: url(/assets/roboto-font/RobotoMono-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-variant: 400;
-    src: url(/assets/roboto-font/Roboto-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
