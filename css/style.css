@@ -8,3 +8,18 @@
 	margin-left: 2.19rem;
 	margin-top: 1.63rem;
 }
+
+.overview_button {
+	font-size: var(--font-size-medium);
+	font-family: 'Roboto Mono', monospace;
+    font-weight: var(--font-weight-semibold);
+	opacity: var(--font-opacity-half);
+}
+
+.overview_button:hover {
+	opacity: 100;
+}
+
+.component-visible {
+	display: flex;
+}
