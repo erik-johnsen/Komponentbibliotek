@@ -10,6 +10,9 @@
 	--color-error: #D74F4F;
 	--color-important: #FF1D1D;
 
+	--font-weight-regular: 400;
+	--font-weight-semibold: 600;
+
 	--font-size-small: 0.938rem;
 	--font-size-medium: 1.875rem;
 
