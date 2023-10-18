@@ -1,0 +1,10 @@
+
+.sidebar {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: var(--font-line-small-gap);
+	margin-left: 2.19rem;
+	margin-top: 1.63rem;
+}
