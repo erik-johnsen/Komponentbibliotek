@@ -1,10 +1,10 @@
 body {
 	display: flex;
 	flex-flow: row nowrap;
+	height: 31.25rem;
 }
 
 main {
-	display: flex;
 	flex-flow: row nowrap;
 }
 .sidebar {
@@ -28,11 +28,9 @@ main {
 	opacity: 100;
 }
 
-.component-visible {
-	display: flex;
-}
 
 .component {
+	display: flex;
 	flex-flow: column nowrap;
 	gap: 2rem;
 	margin-left: 10rem;
@@ -43,4 +41,12 @@ main {
 	font-size: var(--font-size-small);
 	font-family: 'Roboto Mono', monospace;
     font-weight: var(--font-weight-regular);
+}
+
+.component-visible {
+	display: flex;
+}
+
+.component-gone {
+	display: none;
 }

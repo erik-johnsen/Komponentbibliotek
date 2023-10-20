@@ -32,7 +32,6 @@
 }
 
 .component-accordion-expanded {
-	display: flex-start;
 	flex-flow: column nowrap;
 	width: 25rem;
 	padding: 0.94rem;
@@ -50,4 +49,8 @@
 .component-accordion-expanded__content {
 	display: none;
 	font-size: var(--font-size-medium);
+}
+
+.component-visible {
+	display: flex;
 }
