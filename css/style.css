@@ -30,7 +30,7 @@ main {
 
 
 .component {
-	display: flex;
+	display: none;
 	flex-flow: column nowrap;
 	gap: 2rem;
 	margin-left: 10rem;
@@ -49,4 +49,8 @@ main {
 
 .component-gone {
 	display: none;
+}
+
+.sidebar-active {
+	opacity: 100;
 }
