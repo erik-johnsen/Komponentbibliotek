@@ -1,4 +1,12 @@
+body {
+	display: flex;
+	flex-flow: row nowrap;
+}
 
+main {
+	display: flex;
+	flex-flow: row nowrap;
+}
 .sidebar {
 	display: inline-flex;
 	flex-direction: column;
@@ -10,7 +18,7 @@
 }
 
 .overview_button {
-	font-size: var(--font-size-medium);
+	font-size: var(--font-size-large);
 	font-family: 'Roboto Mono', monospace;
     font-weight: var(--font-weight-semibold);
 	opacity: var(--font-opacity-half);
@@ -22,4 +30,17 @@
 
 .component-visible {
 	display: flex;
+}
+
+.component {
+	flex-flow: column nowrap;
+	gap: 2rem;
+	margin-left: 10rem;
+	margin-top: 2rem;
+}
+
+.component-state_name {
+	font-size: var(--font-size-small);
+	font-family: 'Roboto Mono', monospace;
+    font-weight: var(--font-weight-regular);
 }
