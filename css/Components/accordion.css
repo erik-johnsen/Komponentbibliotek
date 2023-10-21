@@ -5,11 +5,6 @@
 
 }
 
-.component-accordion_text {
-	font-size: var(--font-size-large);
-	font-family: 'Roboto Mono', monospace;
-    font-weight: var(--font-weight-regular);
-}
 
 .component-accordion-normal {
 	display: flex;
