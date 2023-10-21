@@ -1,0 +1,22 @@
+
+.component-button-normal {
+	width: 8.625rem;
+	background-color: var(--color-normal);
+	padding: 0.38rem 0.56rem;
+	border-radius: 0.63rem;
+}
+
+.component-button-hover {
+	width: 8.625rem;
+	background-color: var(--color-hover);
+	padding: 0.38rem 0.56rem;
+	border-radius: 0.63rem;
+}
+
+.component-button-active {
+	width: 8.625rem;
+	background-color: var(--color-hover);
+	padding: 0.38rem 0.56rem;
+	border-radius: 0.63rem;
+	border: 1px solid black;
+}
