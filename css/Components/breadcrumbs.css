@@ -1,0 +1,41 @@
+.component-breadcrumbs-normal {
+	display: inline-flex;
+	align-items: center;
+	gap: 2.75rem;
+	font-size: var(--font-size-medium);
+}
+
+.component-breadcrumbs-hover {
+	display: inline-flex;
+	align-items: center;
+	gap: 2.75rem;
+	font-size: var(--font-size-medium);
+}
+
+.breadcrumbs-button {
+	padding: 0.28rem 0.75rem;
+}
+
+.breadcrumbs-button-hover {
+	padding: 0.28rem 0.75rem;
+	border-radius: 0.63rem;
+	transition: background-color 0.4s ease;
+}
+/*
+.breadcrumbs-first::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(/assets/Line.svg);
+	background-size: cover;
+}
+*/
+
+.breadcrumbs-divider {
+	font-size: var(--font-size-large);
+}
+
+.breadcrumbs-button-hover:hover {
+	background-color: var(--color-hover);
+}
