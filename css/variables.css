@@ -2,13 +2,14 @@
 	--font-size-base: 16px;
 
 	--color-primary: #4EACFF;
-	--color-inactive: #D9DEE3;
+	--color-hover-secondary: #D9DEE3;
 	--color-active: #1E81D8;
 	--color-hover: #A5BEE3;
 	--color-normal: #A1CDF4;
 	--color-warning: #E3B505;
 	--color-error: #D74F4F;
 	--color-important: #FF1D1D;
+	--color-inactive: #919497;
 
 	--font-weight-regular: 400;
 	--font-weight-semibold: 600;
