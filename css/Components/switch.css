@@ -47,6 +47,22 @@
 	height: 2.5rem;
 	background-color: var(--color-inactive);
 	border-radius: 2.5rem;
+	padding: 0 0.15rem
+}
+
+
+
+.component-switch-working-ball {
+	width: 2.25rem;
+	height: 2.25rem;
+	background-color: #FFF;
+	border-radius: 2.5rem;
+}
+
+.switchBallRight {
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: var(--color-active);
 }
 
 .component-switch-working:hover {
@@ -54,11 +70,7 @@
 	cursor: pointer;
 }
 
-.component-switch-working-ball {
-	position: absolute;
-	left: 0.15rem;
-	width: 2.25rem;
-	height: 2.25rem;
-	background-color: #FFF;
-	border-radius: 2.5rem
+.switchBallRight:hover {
+	background-color: var(--color-hover);
+	cursor: pointer;
 }
