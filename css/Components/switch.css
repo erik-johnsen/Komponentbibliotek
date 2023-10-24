@@ -1,0 +1,64 @@
+
+.component-switch-normal {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 5.5rem;
+	height: 2.5rem;
+	background-color: var(--color-inactive);
+	border-radius: 2.5rem;
+}
+
+.component-switch-normal-ball {
+	position: absolute;
+	left: 0.15rem;
+	width: 2.25rem;
+	height: 2.25rem;
+	background-color: #FFF;
+	border-radius: 2.5rem
+}
+
+.component-switch-hover {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 5.5rem;
+	height: 2.5rem;
+	background-color: var(--color-hover-secondary);
+	border-radius: 2.5rem;
+}
+
+.component-switch-active {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 5.5rem;
+	height: 2.5rem;
+	background-color: var(--color-active);
+	border-radius: 2.5rem;
+	transform: rotate(180deg);
+}
+
+.component-switch-working {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 5.5rem;
+	height: 2.5rem;
+	background-color: var(--color-inactive);
+	border-radius: 2.5rem;
+}
+
+.component-switch-working:hover {
+	background-color: var(--color-hover-secondary);
+	cursor: pointer;
+}
+
+.component-switch-working-ball {
+	position: absolute;
+	left: 0.15rem;
+	width: 2.25rem;
+	height: 2.25rem;
+	background-color: #FFF;
+	border-radius: 2.5rem
+}
