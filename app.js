@@ -40,3 +40,9 @@ const accordionButton = document.querySelector(".component-accordion-expanded")
 accordionButton.addEventListener("click", () => {
 	accordionExpanded.classList.toggle("component-visible")
 })
+
+const buttonComponent = document.querySelector(".component-button-working")
+
+buttonComponent.addEventListener("click", () => {
+	buttonComponent.classList.toggle("component-button-active")
+})

@@ -13,10 +13,20 @@
 	border-radius: 0.63rem;
 }
 
-.component-button-active {
+.component-button-working {
 	width: 8.625rem;
-	background-color: var(--color-hover);
+	background-color: var(--color-normal);
 	padding: 0.38rem 0.56rem;
 	border-radius: 0.63rem;
+	box-sizing: border-box;
+}
+
+.component-button-working:hover {
+	background-color: var(--color-hover);
+}
+
+.component-button-active {
+	padding: 0.318rem 0.498rem;
+	background-color: var(--color-hover);
 	border: 1px solid black;
 }
