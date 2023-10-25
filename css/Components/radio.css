@@ -1,5 +1,33 @@
 
-.component-radio-normal, .component-radio-hover, .component-radio-active {
+.input-radio {
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	font-size: var(--font-size-large);
+}
+
+.input-radio_text {
+	position: relative;
 	font-size: var(--font-size-medium);
 }
 
+.input-radio_text::before {
+	content: "";
+	display: inline-block;
+	background-color: var(--color-hover-secondary);
+	width: 2rem;
+	height: 2rem;
+	border-radius: 100%;
+	position: absolute;
+	top: -0.1rem;
+	left: -3rem;
+}
+
+.input-radio_label:hover .input-radio_text::before {
+	background-color: var(--color-hover);
+}
+
+.input-radio_input:checked + .input-radio_text::before {
+	background-color: var(--color-primary);
+}
