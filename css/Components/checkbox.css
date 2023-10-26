@@ -1,0 +1,33 @@
+.input-checkbox {
+	margin-top: 0.5rem;
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	font-size: var(--font-size-large);
+}
+
+.input-checkbox_text {
+	position: relative;
+	font-size: var(--font-size-medium);
+}
+
+.input-checkbox_text::before {
+	content: "";
+	display: inline-block;
+	background-color: var(--color-hover-secondary);
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.1rem;
+	position: absolute;
+	top: -0.1rem;
+	left: -2.5rem;
+}
+
+.input-checkbox_label:hover .input-checkbox_text::before {
+	background-color: var(--color-hover);
+}
+
+.input-checkbox_input:checked + .input-checkbox_text::before {
+	background-color: var(--color-primary);
+}
