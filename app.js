@@ -53,13 +53,3 @@ buttonComponent.addEventListener("click", () => {
 	buttonComponent.classList.toggle("component-button-active")
 })
 
-//switch
-
-const switchComponent = document.querySelector(".component-switch-working")
-const switchBallComponent = document.querySelector(".component-switch-working-ball")
-
-switchComponent.addEventListener("click", () => {
-	switchComponent.classList.toggle("switchBallRight")
-
-})
-
