@@ -53,3 +53,23 @@ buttonComponent.addEventListener("click", () => {
 	buttonComponent.classList.toggle("component-button-active")
 })
 
+//switch
+
+const switchComponent = document.querySelector(".component-switch-working")
+
+switchComponent.addEventListener("click", () => {
+	switchComponent.classList.toggle("component-toggle-switch-active")
+})
+
+//tabs
+const tabButtons = document.querySelectorAll(".tablinks")
+
+tabButtons.forEach(button => {
+	if(button.classList.contains("tab1")) {
+		button.classList.add("tab-active")
+	}
+	button.addEventListener("click", () => {
+		tabButtons.forEach(button => button.classList.remove("tab-active"))
+		button.classList.add("tab-active")
+	})
+})
