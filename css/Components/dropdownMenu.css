@@ -51,5 +51,5 @@
 }
 
 .component-dropdown_menu-working ul li:hover {
-	color: #fff;
+	text-decoration: underline;
 }
