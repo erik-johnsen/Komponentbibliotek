@@ -32,10 +32,6 @@ sidebarButtons.forEach(button => {
 	button.addEventListener("click", ShowComponents)
 })
 
-
-
-
-
 //accordion
 
 const accordionExpanded = document.querySelector(".component-accordion-expanded__content")
@@ -62,6 +58,7 @@ switchComponent.addEventListener("click", () => {
 })
 
 //tabs
+
 const tabButtons = document.querySelectorAll(".tablinks")
 
 tabButtons.forEach(button => {
@@ -72,4 +69,37 @@ tabButtons.forEach(button => {
 		tabButtons.forEach(button => button.classList.remove("tab-active"))
 		button.classList.add("tab-active")
 	})
+})
+
+//toast
+
+const toastTriggers = document.querySelectorAll(".toast-button")
+
+toastTriggers.forEach(toastTrigger => {
+
+	const triggerState = (event) => {
+		const button = event.currentTarget
+		const stateToTest = button.dataset.toastTest
+
+		const createToastTest = (message, type) => {
+			const toastContainer = document.createElement("div")
+
+			toastContainer.className = "toast" + " toast-" + type + " toast-popup"
+			toastContainer.textContent = message
+
+			return toastContainer
+		}
+		if(stateToTest === "normal") {
+			const toastTest = createToastTest("Hello Governor", "normal")
+			document.body.appendChild(toastTest)
+		} else if(stateToTest === "warning") {
+			const toastTest = createToastTest("Be Warned!", "warning")
+			document.body.appendChild(toastTest)
+		} else {
+			const toastTest = createToastTest("Must have been an error!", "error")
+			document.body.appendChild(toastTest)
+		}
+	}
+
+	toastTrigger.addEventListener("click", triggerState)
 })
