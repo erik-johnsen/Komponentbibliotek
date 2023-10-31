@@ -2,16 +2,18 @@
 .input-tabs {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
+
 }
 
 .tablinks {
 	display: flex;
 	flex-flow: row nowrap;
-	width: 26rem;
+	justify-content: center;
+	align-items: center;
+	width: 20rem;
+	padding: 0.5rem;
 	background-color: var(--color-normal);
-	padding: 1.38rem 10rem;
-	font-size: var(--font-size-large);
+	font-size: var(--font-size-medium);
 	font-weight: var(--weight-regular);
 	color: #fff;
 }
