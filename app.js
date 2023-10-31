@@ -103,3 +103,23 @@ toastTriggers.forEach(toastTrigger => {
 
 	toastTrigger.addEventListener("click", triggerState)
 })
+
+//slider
+
+//slider Square
+const sliderSquare = document.getElementById("range-square")
+const outputValueSquare = document.getElementById("outputValue-square")
+outputValueSquare.innerHTML = sliderSquare.value
+
+sliderSquare.oninput = function() {
+	outputValueSquare.innerHTML = this.value
+}
+
+//slider Round
+const sliderRound = document.getElementById("range-round")
+const outputValueRound = document.getElementById("outputValue-round")
+outputValueRound.innerHTML = sliderRound.value
+
+sliderRound.oninput = function() {
+	outputValueRound.innerHTML = this.value
+}

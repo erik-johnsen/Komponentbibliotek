@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 
 	<link rel="stylesheet" href="./css/Components/accordion.css">
-	<link rel="stylesheet" href="./css/Components/badge.css">
+	<link rel="stylesheet" href="./css/Components/slider.css">
 	<link rel="stylesheet" href="./css/Components/breadcrumbs.css">
 	<link rel="stylesheet" href="./css/Components/button.css">
 	<link rel="stylesheet" href="./css/Components/checkbox.css">
@@ -45,7 +45,7 @@
 				<button data-component="toast" class="overview_button">Toast</button>
 			</li>
 			<li>
-				<button data-component="badge" class="overview_button">Badge</button>
+				<button data-component="slider" class="overview_button">Slider</button>
 			</li>
 			<li>
 				<button data-component="switch" class="overview_button">Switch</button>
@@ -210,7 +210,7 @@
 
 		</div>
 
-		<div class="component component-text component-visible" data-id="toast">
+		<div class="component component-text" data-id="toast">
 			<div class="component-state">
 				<div class="component-state_name">Normal</div>
 			</div>
@@ -237,6 +237,30 @@
 			</span>
 
 		</div>
+
+		<div class="component component-text" data-id="slider">
+
+			<div class="component-state">
+				<div class="component-state_name">Square</div>
+			</div>
+
+			<div class="component-slider_container">
+				<input class="component-square_slider" type="range" min="1" max="100" value="50" id="range-square">
+				<div>Value: <span id="outputValue-square"></span></div>
+			</div>
+
+			<div class="component-state">
+				<div class="component-state_name">Round</div>
+			</div>
+
+			<div class="component-slider_container">
+				<input class="component-round_slider" type="range" min="1" max="100" value="50" id="range-round">
+				<div>Value: <span id="outputValue-round"></span></div>
+			</div>
+
+			
+		</div>
+		
 
 		<div class="component component-text" data-id="switch">
 			<div class="component-state">
