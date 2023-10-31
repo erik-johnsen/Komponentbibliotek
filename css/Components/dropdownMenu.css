@@ -43,6 +43,7 @@
 
 .component-dropdown_menu-working:hover {
 	cursor: pointer;
+	background-color: var(--color-hover);
 }
 .component-dropdown_menu-working:hover ul {
 	cursor: pointer;
