@@ -19,11 +19,12 @@
 	background-color: var(--color-error);
 }
 
-.toast-popup {
-	position: sticky;
-	bottom: 9rem;
+.toasts-container {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
 	z-index: 1;
-	align-self: flex-start
 }
 
 .toast-buttons {

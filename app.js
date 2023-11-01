@@ -74,6 +74,7 @@ tabButtons.forEach(button => {
 //toast
 
 const toastTriggers = document.querySelectorAll(".toast-button")
+const toastsContainer = document.querySelector(".toasts-container")
 
 toastTriggers.forEach(toastTrigger => {
 
@@ -84,20 +85,21 @@ toastTriggers.forEach(toastTrigger => {
 		const createToastTest = (message, type) => {
 			const toastContainer = document.createElement("div")
 
-			toastContainer.className = "toast" + " toast-" + type + " toast-popup"
+			toastContainer.className = "toast" + " toast-" + type
 			toastContainer.textContent = message
 
 			return toastContainer
 		}
-		if(stateToTest === "normal") {
+
+		if (stateToTest === "normal") {
 			const toastTest = createToastTest("Hello Governor", "normal")
-			document.body.appendChild(toastTest)
+			toastsContainer.appendChild(toastTest)
 		} else if(stateToTest === "warning") {
 			const toastTest = createToastTest("Be Warned!", "warning")
-			document.body.appendChild(toastTest)
+			toastsContainer.appendChild(toastTest)
 		} else {
 			const toastTest = createToastTest("Must have been an error!", "error")
-			document.body.appendChild(toastTest)
+			toastsContainer.appendChild(toastTest)
 		}
 	}
 
