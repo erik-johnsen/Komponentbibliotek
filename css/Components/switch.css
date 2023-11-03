@@ -72,6 +72,8 @@
 	transform: translate3d(131%, 0, 0);
 }
 
-.component-toggle-switch-active {
-	background-color: black
+
+.component-switch-working:has(input:checked){
+	background-color: var(--color-active);
+	transition: all 500ms ease;
 }
