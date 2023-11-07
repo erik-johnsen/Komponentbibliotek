@@ -49,14 +49,6 @@ buttonComponent.addEventListener("click", () => {
 	buttonComponent.classList.toggle("component-button-active")
 })
 
-//switch
-
-const switchComponent = document.querySelector(".component-switch-working")
-
-switchComponent.addEventListener("click", () => {
-	switchComponent.classList.toggle("component-toggle-switch-active")
-})
-
 //tabs
 
 const tabButtons = document.querySelectorAll(".tablinks")
@@ -81,26 +73,34 @@ toastTriggers.forEach(toastTrigger => {
 	const triggerState = (event) => {
 		const button = event.currentTarget
 		const stateToTest = button.dataset.toastTest
+		let toastTest
 
 		const createToastTest = (message, type) => {
 			const toastContainer = document.createElement("div")
 
 			toastContainer.className = "toast" + " toast-" + type
 			toastContainer.textContent = message
-
 			return toastContainer
 		}
 
 		if (stateToTest === "normal") {
-			const toastTest = createToastTest("Hello Governor", "normal")
+			toastTest = createToastTest("Hello Governor", "normal")
 			toastsContainer.appendChild(toastTest)
 		} else if(stateToTest === "warning") {
-			const toastTest = createToastTest("Be Warned!", "warning")
+			toastTest = createToastTest("Be Warned!", "warning")
 			toastsContainer.appendChild(toastTest)
 		} else {
-			const toastTest = createToastTest("Must have been an error!", "error")
+			toastTest = createToastTest("Must have been an error!", "error")
 			toastsContainer.appendChild(toastTest)
 		}
+
+		toastsContainer.classList.add("fade-in-out")
+
+		setTimeout(() => {
+			toastsContainer.classList.remove("fade-in-out")
+			toastsContainer.removeChild(toastTest)
+		}, 3000)
+
 	}
 
 	toastTrigger.addEventListener("click", triggerState)
